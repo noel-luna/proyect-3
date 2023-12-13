@@ -3,7 +3,7 @@ import './App.css';
 import { NavBar } from './componentes/NavBar';
 import {Footer} from './componentes/Footer';
 import { Cupones} from '../src/componentes/Cupones';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Menus from './componentes/Menus';
 import Restaurantes from './componentes/Restaurantes';
 import Novedades from './componentes/Novedades';
@@ -16,7 +16,7 @@ import {Inicio} from './componentes/Inicio';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      
         
         <NavBar/>
 
@@ -33,7 +33,7 @@ function App() {
           <Route path='/check' element={<Check/>}></Route>
         </Routes>    
         <Footer></Footer>
-      </BrowserRouter>
+      
     </div>
   );
 }
